@@ -1,1 +1,2 @@
-Link to the template files: https://github.com/tomitokko/django-social-media-template
+A project that is done as a part of IT minor program
+
