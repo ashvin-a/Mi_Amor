@@ -16,12 +16,10 @@
     <link rel="stylesheet" href="{% static 'assets/css/uikit.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/tailwind.css' %}">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-
             <header>
                 <div class="header_inner">
                     <!-- <form action="/search" method="POST"> -->
@@ -134,7 +132,7 @@
                                         </div>
                                         <div class="drop_content">
                                             <p> <strong class="text-link" >Taiye</strong>  
-                                                <span class="text-link"> is following you  </span>
+                                                <span class="text-link"> is a match for you!!  </span>
                                             </p>
                                             <span class="time-ago"> 2 hours ago </span>
                                         </div>
@@ -189,26 +187,52 @@
                 </div>
             </header>
 
-            <div id="back" class="container my-12">
-                <style>
-                    #back{
-                        background-color: black;
-                        width: 3000px;
-                        height: fit-content;
-                        justify-content: center;
-                    }
-                </style>
-
+            <div class="container m-auto">
                 <!--<h1 class="lg:text-2xl text-lg font-extrabold leading-none text-gray-900 tracking-tight mb-5"> Feed </h1>--->
 
-                <div class="lg:flex justify-center lg:space-x-10 lg:space-y-0 space-y-5">
+                <div class="lg:flex justify-center lg:space-x-1 lg:space-y-20 space-y-200">
 
                     <!-- left sidebar-->
+                    <div class="space-y-1 z-index flex-shrink-0 lg:w-7/12">
+                        <div class="lg:w-9/12 right-side padding">
 
+                            <div class="bg-white shadow-md rounded-md overflow-hidden">
+    
+                                <div class="bg-gray-30  border-b border-gray-100 flex items-baseline justify-between py-4 px-6 ">
+                                    <h2 class="font-semibold text-lg">INBOX</h2>
+                                    <!-- <a href="#"> Refresh</a> -->
+                                </div>
+                               
+                                <div class="divide-gray-300 divide-gray-50 divide-opacity-50 divide-y px-4 ">
+    
+                                   <!-- /// {% for suggestion in suggestions_username_profile_list %} -->
+                                    <div class="flex items-center justify-between py-3">
+                                        <div class="flex flex-1 items-center space-x-4">
+                                            <a href="/profile/{{suggestion.user}}">
+                                                <!-- <img src="{{suggestion.profileimg.url}}" class="bg-gray-200 rounded-full w-10 h-10"> -->
+                                            </a>
+                                            <div class="flex flex-col">
+                                                <span class="block capitalize font-semibold"> {{suggestion.user}} </span>
+                                                <span class="block capitalize text-sm"> {{suggestion.bio}} </span>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                    <!-- {% endfor %} -->
+    
+                                </div>
+    
+                            </div>
+    
+                          
+    
+                        </div>
+                    </div>
                     <!-- right sidebar-->
-                    <div class="lg:w-8/12">
+                    <div class="lg:w-5/12">
 
-                        <div class="bg-white  shadow-md rounded-md overflow-hidden">
+                        <div class="bg-white shadow-md rounded-md overflow-hidden">
 
                             <div class="bg-gray-30  border-b border-gray-100 flex items-baseline justify-between py-4 px-6 ">
                                 <h2 class="font-semibold text-lg">Suggestions</h2>
@@ -225,7 +249,7 @@
                                         </a>
                                         <div class="flex flex-col">
                                             <span class="block capitalize font-semibold"> {{suggestion.user}} </span>
-                                            <span class="block capitalize text-sm"> {{suggestion.bio}} </span>
+                                            <!-- <span class="block capitalize text-sm"> {{suggestion.bio}} </span> -->
                                         </div>
                                     </div>
                                     
@@ -249,13 +273,6 @@
         </div>
 
     </div>
-
-
-
-
-
-
-
 
  <!-- Scripts
     ================================================== -->

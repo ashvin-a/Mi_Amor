@@ -17,11 +17,13 @@
     <link rel="stylesheet" href="{% static 'assets/css/uikit.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/tailwind.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/kaushan'%}">
+
 
 </head>
 
-<body class="bg-gray-100"
-style="background-image: url(https://img.freepik.com/premium-photo/set-cheerful-multiethnic-people-sharing-positive-emotions_116547-22051.jpg?w=2000); background-repeat: no-repeat; background-position: center; background-size: 100% 100%; z-index: -2 ">
+<body id="bod" class="bg-gray-100"
+style="background-image: url(/static/images/Screenshot\ 2023-01-08\ 115035\ copy.png); background-repeat: no-repeat; background-position: center; background-size: 100% 100%; z-index: -2 ">
 
 
     <div id="wrapper" class="flex flex-col justify-between h-screen">
@@ -45,7 +47,7 @@ style="background-image: url(https://img.freepik.com/premium-photo/set-cheerful-
                                 text-shadow: 10px 5px 10px black;
                             }
                         </style>
-                        <b><h1 id="mi" style="font-size: 5rem;"><font face = "Helvetica" color = 'white'>MI AMOR</font> </h1></b>
+                        <b><h1 id="mi" style="font-size: 5rem;"><font face = "kaushan" color = 'white'>MI AMOR</font> </h1></b>
                     </a>
 
                     <div class="capitalize flex font-semibold hidden lg:block my-2 space-x-3 text-center text-sm">
@@ -67,7 +69,7 @@ style="background-image: url(https://img.freepik.com/premium-photo/set-cheerful-
             <div id="sig" class="lg:p-12 max-w-md max-w-xl lg:my-0 my-12 mx-auto p-6 space-y-">
                 <h1 class="lg:text-3xl text-xl font-semibold mb-6; shadow-2px 2px 10px
                 "> 
-                <font face = "Helvetica" size = "20px" color ="white" > 
+                <font face = "" size = "20px" color ="white" > 
                  LOG IN 
                 </font></h1>
 
@@ -85,8 +87,9 @@ style="background-image: url(https://img.freepik.com/premium-photo/set-cheerful-
                 </div>
 
 
-                <form action="" method="POST">
+                <form action="" method="POST" >
                     {% csrf_token %}
+                    <br>
                     <input type="text" name="username" placeholder="Username" class="bg-gray-200 mb-2 shadow-none dark:bg-gray-800" style="border: 1px solid #d3d5d8 !important;">
                     <input type="password" name="password" placeholder="Password" class="bg-gray-200 mb-2 shadow-none dark:bg-gray-800" style="border: 1px solid #d3d5d8 !important;">
                     <!-- <div class="flex justify-between my-4">
@@ -96,7 +99,7 @@ style="background-image: url(https://img.freepik.com/premium-photo/set-cheerful-
                         </div>
                         <a href="#"> Forgot Your Password? </a>
                     </div> -->
-                    <button type="submit" class="bg-gradient-to-br from-pink-500 py-3 rounded-md text-white text-xl to-red-400 w-full">Login</button>
+                    <button type="submit" class="bg-gradient-to-br from-pink-500 py-3 rounded-md text-white text-xl to-red-400 w-full">Login<a href="/setting" class=""></a></button>
                     <div class="text-center mt-5 space-x-2">
                         <p class="text-base"
                         style="color: white; font-size: large;
@@ -118,9 +121,9 @@ style="background-image: url(https://img.freepik.com/premium-photo/set-cheerful-
 
         <div id="foot"  class="lg:mb-5 py-3 uk-link-reset">
             <div class="flex flex-col items-center justify-between lg:flex-row max-w-6xl mx-auto lg:space-y-0 space-y-3">
-                <div class="flex space-x-2 text-gray-700 uppercase">
+                <div class="flex space-x-2 text-white uppercase font-semibold">
                     <a href="#"> About</a>
-                    <a href="#"> Help</a>
+                    <a href="/help" class=""> Help</a>
                     <a href="#"> Terms</a>
                     <a href="#"> Privacy</a>
                 </div>

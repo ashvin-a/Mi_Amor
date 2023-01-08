@@ -39,7 +39,7 @@
                 </ul> -->
                 <br>
                 <hr>
-                <div class="grid lg:grid-cols-3 mt-12 gap-8">
+                <div class="grid lg:grid-cols-3 mt-12 gap-8 padding-left">
                     <!-- <div>
                         <h3 class="text-xl mb-2"> General </h3>
                         <p></p>
@@ -117,8 +117,26 @@
                                 <textarea id="about" name="bio" rows="3"  class="shadow-none bg-gray-100">{{user_profile.bio}}</textarea>
                             </div> 
                             <div class="col-span-2">
-                                <label for=""> Location</label>
-                                <input type="text" name="location" value="{{user_profile.location}}" class="shadow-none bg-gray-100">
+                                <label for=""> Location </label>
+                        
+                                <select name="location"  class="dropdown bg-gray-100" value="{{user_profile.location}}">
+                                    <option selected>{{user_profile.location}}</option>
+                                    <option value="Alappuzha">Alappuzha</option>
+                                    <option value="Ernakulam">Ernakulam</option>
+                                    <option value="Idukki">Idukki</option>
+                                    <option value="Kannur">Kannur</option>
+                                    <option value="Kasargod">Kasargod</option>
+                                    <option value="Kollam">Kollam</option>
+                                    <option value="Kottayam">Kottayam</option>
+                                    <option value="Kozhikode">Kozhikode</option>
+                                    <option value="Malappuram">Malappuram</option>
+                                    <option value="Palakkad">Palakkad</option>
+                                    <option value="Pathanamtitta">Pathanamtitta</option>
+                                    <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+                                    <option value="Thrissur">Thrissur</option>
+                                    <option value="Wayanad">Wayanad</option>
+            
+                                </select>
                             </div>
                             
                        </div> 

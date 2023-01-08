@@ -18,10 +18,10 @@ class Profile(models.Model):
     orientation = models.CharField(max_length=20,blank=True)
     bday = models.DateField(default="{{user_profile.bday}}" )
     profileimg = models.ImageField(upload_to='profile_images',default='blank-profile-picture.png')
-    location = models.CharField(max_length=100, blank=True)
+    location = models.CharField(max_length=20, blank=True)
 
     def __str__(self):
-        return self.user.username
+        return self.user
 
 class Post(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4)

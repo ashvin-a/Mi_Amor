@@ -1,9 +1,19 @@
 
 @import url('https://fonts.googleapis.com/css?family=Muli:300,400,400i,500,700,800');
 @import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script')
 @font-face {
     font-family: calibri;
     
+    
+}
+@font-face {
+    font-family: 'Kaushan Script';
+    src: url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+  }
+@font-face {
+  font-family: 'Kaushan Script';
+  src: url('/fonts/kaushan-script.ttf');
 }
 
 
@@ -67,7 +77,7 @@ img {
 }
 
 .theme-layout.boxed {
-    background: none repeat scroll 0 0 #000FFF;
+    background: none repeat scroll 0 0 #111215;
     float: none;
     margin: 0 auto;
     overflow: hidden;
@@ -1115,7 +1125,7 @@ header.sticky {
     display: table;
     float: none;
     margin: 0 auto;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     width: 80%;
 }
 
