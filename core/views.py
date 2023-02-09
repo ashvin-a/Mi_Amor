@@ -8,7 +8,7 @@ from itertools import chain
 import random
 
 # Create your views here.
-def help1(request):
+def help1(request):  
     return render(request,'help.html')
 
 @login_required(login_url='signin')
@@ -34,7 +34,7 @@ def index(request):
     # WE WORK HERE !!!!!!user suggestion starts
     all_users = User.objects.all()
     user_following_all = []
-    user_loc = Profile.objects.get(location=user.location)
+    
     # for x in list(all_users):
     #     if x in list(user_):
     #         user_following_all.append(x)

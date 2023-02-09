@@ -151,7 +151,7 @@
                         </a>
                         <div uk-drop="mode: click;offset: 4" class="header_dropdown">
                             <h4
-                                class="-mt-5 -mx-5 bg-gradient-to-t from-gray-100 to-gray-50 border-b font-bold px-6 py-3">
+                                c lass="-mt-5 -mx-5 bg-gradient-to-t from-gray-100 to-gray-50 border-b font-bold px-6 py-3">
                                 Messages </h4>
                             <ul class="dropdown_scrollbar" data-simplebar>
                                 <li>
@@ -176,7 +176,7 @@
                         <a href="#">
                             <img src="{{user_profile.profileimg.url}}" class="header-avatar" alt="">
                         </a>
-                        <div uk-drop="mode: click;offset:9" class="header_dropdown profile_dropdown border-t">
+                        <div  uk-drop="mode: click;offset:9" class="header_dropdown profile_dropdown border-t">
                             <ul>
                                 <li><a href="/settings"> Profile setting </a> </li>
                                 <li><a href="logout"> Log Out</a></li>
@@ -203,7 +203,7 @@
                                     <!-- <a href="#"> Refresh</a> -->
                                 </div>
                                
-                                <div class="divide-gray-300 divide-gray-50 divide-opacity-50 divide-y px-4 ">
+                                <div class="divide-gray-300 divide-gray-50 divide-opacity-50 divide-y px-8">
     
                                    <!-- /// {% for suggestion in suggestions_username_profile_list %} -->
                                     <div class="flex items-center justify-between py-3">
@@ -212,9 +212,10 @@
                                                 <!-- <img src="{{suggestion.profileimg.url}}" class="bg-gray-200 rounded-full w-10 h-10"> -->
                                             </a>
                                             <div class="flex flex-col">
-                                                <span class="block capitalize font-semibold"> {{suggestion.user}} </span>
+                                                <div class="block capitalize font-semibold"> {{all_users.bio}} </div>
                                                 <span class="block capitalize text-sm"> {{suggestion.bio}} </span>
                                             </div>
+                                            
                                         </div>
                                         
                                         
