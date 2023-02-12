@@ -34,18 +34,6 @@ def index(request):
     # WE WORK HERE !!!!!!user suggestion starts
     all_users = User.objects.all()
     user_following_all = []
-    
-    # for x in list(all_users):
-    #     if x in list(user_):
-    #         user_following_all.append(x)
-    
-    #Here we go !!
-    # location_recommend = []
-
-    #user_recomend_list=[x for x in list(all_users) if (x in list(location_recommend) )]
-    
-    
-
     for user in user_following:
         user_list = User.objects.get(username=user.user)
         user_following_all.append(user_list)
